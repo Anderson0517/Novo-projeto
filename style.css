@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sofadi+One&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font1: verdana. geneva, tahoma, sans-serif;
+    --font2: "Nerko One", cursive;
+    --font3: "Sofadi One", system-ui;
+
+    
+}
+html, body {
+    min-height: 100vh;
+    background-color: rgb(180, 177, 172);
+    -webkit-flow-into: var(--font2);
+}
+header {
+    background-color: burlywood;
+}
+ header > h1 {
+    color: rgb(48, 44, 65);
+    font-variant: small-caps;
+    font-family: var(--font3);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
+    padding: 10px;
+    text-align: center;
+    font-size: 10vh;
+ }
+ header > p {
+    background-color: rgb(218, 194, 159);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+ }
+ a:hover {
+    text-decoration: underline;
+ }
+  header > p > a {
+    color: rgb(88, 50, 50);
+    text-decoration: none;
+  }
+  section {
+    padding-top: 5vh;
+    padding-bottom: 10px;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 3.5vh;
+  }
+   section > p {
+    padding-bottom: 2em;
+   }
+    section.normal{
+        background-color: white;
+        color: black;
+    }
+
+    section.imagem {
+        background-color: black;
+        color: white;
+        box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.527);
+        background-size: cover;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    section.imagem > p {
+         
+        display: inline-block;
+        padding: 6px;
+        background-color: rgba(0, 0, 0, 0.377);
+        color: white;
+        text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.575);
+        
+    }
+     section#img1{
+        background-image: url(imagem/voce-sabe-como-incentivar-a-leitura-na-vida-do-seu-filho-descubra.jpeg);
+        background-position: right center;
+        
+     }
+      section#img2 {
+        background-image: url(imagem/clubelivro.avif);
+        
+      }
+      section#autor {
+        color: rgb(92, 55, 55);
+
+      }
+
+     footer{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        text-align: center;
+     }
+
